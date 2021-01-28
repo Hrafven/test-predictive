@@ -14,7 +14,7 @@
     <pre id="location"></pre>
     <script>
         window.navigator.geolocation.getCurrentPosition(res => {
-            document.querySelector('#location').innerHTML = JSON.stringify(res, null, 4);
+            document.querySelector('#location').innerHTML = JSON.stringify(res.coords, null, 4);
             console.log(res);
         }, console.err);
     </script>
